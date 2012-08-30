@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+cp jythonlib.jar myapp.jar
+cp Lib/__run__.py ./
+jar uf myapp.jar Lib/
+jar uf myapp.jar org/
+jar uf myapp.jar __run__.py
+jar ufm myapp.jar manif
